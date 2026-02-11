@@ -14,11 +14,13 @@
         //1 s1 > s2 : +ve value
         //2 s1 == s2 : 0
         //3 s1 < s2 : -ve value
+
         // if(firstName.compareTo(lastName) == 0) {
         //     System.out.println("String are equal");
         // } else {
         //     System.out.println("Strings are not equal");
         // }
+        // System.out.println(firstName.compareTo(lastName)); 
 
         // if(new String("Tony") == new String("Tony")){
         //     System.out.println("String are equal");

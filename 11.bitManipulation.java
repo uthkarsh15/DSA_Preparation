@@ -1,5 +1,4 @@
-import java.util.Scanner;
-
+import java.util.*;
  class bitManipulation {
     public static void main(String args[]) {
 

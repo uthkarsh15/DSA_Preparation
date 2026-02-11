@@ -36,9 +36,11 @@
     //     printSum(i+1, n, sum);
     //     System.out.println(i);
     // }
+
     // public static void main(String[] args) {
     //     printSum(1, 5, 0);
     // }
+
 
     // public static int calcFactorial(int n){
     //     if(n == 1 || n == 0){
@@ -53,6 +55,7 @@
     //     int ans = calcFactorial(n);
     //     System.out.println(ans);
     // }
+
 
     // public static void printFib(int a,int b, int n){
     //     if(n == 0){
@@ -88,22 +91,24 @@
     //     System.out.println(calcPower(x, n));
     // }
 
-    public static int calcPower(int x, int n){
-        if(n==0){
-            return 1;
-        }
-        if(x==0){
-            return 0; 
-        }
-        if(n % 2==0){
-            return calcPower(x, n/2) * calcPower(x, n/2);
-        }
-        else{
-            return calcPower(x, n/2) * calcPower(x, n/2) * x;
-        }
-    }
-    public static void main(String args[]){
-        int x=3, n=2;
-        System.out.println(calcPower(x, n));
-    }
+
+    
+    // public static int calcPower(int x, int n){
+    //     if(n==0){
+    //         return 1;
+    //     }
+    //     if(x==0){
+    //         return 0; 
+    //     }
+    //     if(n % 2==0){
+    //         return calcPower(x, n/2) * calcPower(x, n/2);
+    //     }
+    //     else{
+    //         return calcPower(x, n/2) * calcPower(x, n/2) * x;
+    //     }
+    // }
+    // public static void main(String args[]){
+    //     int x=3, n=2;
+    //     System.out.println(calcPower(x, n));
+    // }
 }

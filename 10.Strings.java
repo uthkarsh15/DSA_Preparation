@@ -8,7 +8,7 @@ class Strings {
 
         // set char at index 0
         // sb.setCharAt(0, 'p');
-        // System.out.println(sb);/
+        // System.out.println(sb);
 
         // sb.insert(2, 'n');
         // System.out.println(sb);

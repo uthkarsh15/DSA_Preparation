@@ -1,17 +1,17 @@
 class recursion2 {
-    // public static void towerOfHanoi(int n, String src, String helper, String dest){
-    //     if(n==1){
-    //         System.out.println("transfer disk"+ n + " from "+src+" to "+dest);
-    //         return;
-    //     }
-    //     towerOfHanoi(n-1, src, dest, helper);
-    //     System.out.println("transfer disk"+ n + " from "+src+" to "+dest);
-    //     towerOfHanoi(n-1, helper, src, dest);
-    // }
-    // public static void main(String args[]){
-    //     int n=3;
-    //     towerOfHanoi(n, "S", "H", "D");
-    // }
+    public static void towerOfHanoi(int n, String src, String helper, String dest){
+        if(n==1){
+            System.out.println("transfer disk "+ n + " from "+src+" to "+dest);
+            return;
+        }
+        towerOfHanoi(n-1, src, dest, helper);
+        System.out.println("transfer disk "+ n + " from "+src+" to "+dest);
+        towerOfHanoi(n-1, helper, src, dest);
+    }
+    public static void main(String args[]){
+        int n=3;
+        towerOfHanoi(n, "S", "H", "D");
+    }
 
 
     // public static void reverseString(String str, int idx){
@@ -157,22 +157,22 @@ class recursion2 {
     // }
 
 
-    public static String[] keypad = {".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
+    // public static String[] keypad = {".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
 
-    public static void printComb(String str, int idx, String combination){
-        if(idx ==str.length()){
-            System.out.println(combination);
-            return;
-        }
-        char currChar = str.charAt(idx);
-        String mapping = keypad[currChar - '0'];
+    // public static void printComb(String str, int idx, String combination){
+    //     if(idx ==str.length()){
+    //         System.out.println(combination);
+    //         return;
+    //     }
+    //     char currChar = str.charAt(idx);
+    //     String mapping = keypad[currChar - '0'];
 
-        for(int i=0; i<mapping.length(); i++){
-            printComb(str, idx+1, combination+mapping.charAt(i));
-        }
-    }
-    public static void main(String args[]) {
-        String str = "23";
-        printComb(str, 0, "");
-    }
+    //     for(int i=0; i<mapping.length(); i++){
+    //         printComb(str, idx+1, combination+mapping.charAt(i));
+    //     }
+    // }
+    // public static void main(String args[]) {
+    //     String str = "23";
+    //     printComb(str, 0, "");
+    // }
 }
